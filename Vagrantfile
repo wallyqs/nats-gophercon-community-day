@@ -6,6 +6,8 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 4222, host: 4222
   config.vm.network "forwarded_port", guest: 8222, host: 8222
   config.vm.network "forwarded_port", guest: 9411, host: 9411
+  config.vm.network "forwarded_port", guest: 7777, host: 7777
+  config.vm.network "forwarded_port", guest: 9090, host: 9090
 
   GO_VERSION = "1.8.3"
 
